@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css' rel='stylesheet'/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <title>Student Accomodation</title>
+</head>
+<body>
+    <!--NavBar--->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-4">
+        <div class="container">
+            <a href = "#" class = "navbar-brand ">Student Accommodation</a>
+
+            <button 
+                class="navbar-toggler" 
+                type="button" 
+                data-bs-toggle ="collapse" 
+                data-bs-target ="#navmenu"
+                >
+
+                <i class="bi bi-list"><span class="nav-toggler-icon"></span></i>
+
+            </button>
+
+            <div class="collapse navbar-collapse" id = "navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                    <a href="#about" class="nav-link">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Contact Us</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        
+
+    </nav>
+    <!--showcase-->
+    <section class="bg-dark text-light p-5 text-center text-sm-start">
+        <div class="container">
+            <div class="d-sm-flex align-items-center justify-content-between">
+                <div>
+                <h1>Home Away <span class=" text-warning"> From Home</span></h1>
+                <p class="lead my-4">
+                    Beautiful Accommodation For College Students
+                </p>
+                <button class="btn btn-primary btn-lg " data-bs-toggle="modal" data-bs-target="#Application">Application Form</button>
+                </div>
+                <img class="img-fluid w-50 d-none d-sm-block " src="images/Image4.JPG" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!--Samll Section-->
+    <section class=" bg-primary-subtle text-dark p-5">
+        <div class="container">
+            <h3><span class=" text-primary">What we offer</span></h3>
+            <p>We bring the best and most affordable accomodation experience to our tenants by offering 
+                the peace of mind hustle-free environment needed not only for having a quick and solid start but increase 
+                the safety or educational success and your career at large</p>
+        </div>
+    </section>
+    <!--Boxes-->
+    <section class = "bg-tertiary-subtle p-5">
+        <div class = "container ">
+            <div class="row text-center">
+                <div class = "col-md">
+                <div class="card bg-dark text-light" style="width: 20rem;">
+                    <img src="images/Basic-Cooking-Methods.jpg" class="card-img-top" alt="kitchen">
+                    <div class="card-body">
+                      <h5 class="card-title">Kitchen</h5>
+                      <p class="card-text"> Our kitchen is spacious and tidy, 
+                        perfect for preparing your own meals. 
+                        It has modern stoves, clean fridges, secure food lockers, cooking utensils and storage cupboards. 
+                        Whether you're an experienced cook or just getting started, our kitchen is set up to make your cooking easy and enjoyable, so you can create delicious meals with ease..</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md">
+                <div class="card bg-light text-dark" style="width: 20rem;">
+                    <img src="images/Solar.jpeg" class="card-img-top" alt="Utilities">
+                    <div class="card-body">
+                      <h5 class="card-title">Utilities</h5>
+                      <p class="card-text">
+                        Our rental includes essential utilities to make your stay comfortable. 
+                        You'll have access to Wi-Fi for staying connected, solar power for eco-friendly energy, borehole water for reliable supply, and solar geysers for hot water. 
+                        Your security is a priority with us, and we provide wardrobes and comfortable beds to make you feel at home during your stay.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md">
+                    <div class="card bg-dark text-light" style="width: 20rem;">
+                        <img src="images/studying-ahead-1421056.jpg" class="card-img-top" alt="Study">
+                        <div class="card-body">
+                          <h5 class="card-title">Study Room</h5>
+                          <p class="card-text">
+                            Our study room is designed to offer a clean and roomy space for your academic needs. 
+                            It comes equipped with a reading desk and chairs to provide a comfortable study environment. 
+                            Additionally, fitted cupboards are available to help you organize your study materials efficiently.</p>
+                        </div>
+                      </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+    <!--About Us-->
+    <section id="about" class="p-5 bg-dark text-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md">
+                    <img src="images/image3.JPG" class="img-fluid" alt="">
+                </div>
+                <div class="col-md p-5">
+                    <h2><span class=" text-warning">About Us</span></h2>
+                    <h4><span class=" text-secondary">Accommodation Rules</span></h4>
+                    <p>Our accommodation has a set of rules in place to ensure a peaceful and comfortable environment. Smoking is not allowed, and we kindly request that no pets be brought along. Additionally, to maintain a serene atmosphere, we do not permit guests or parties. Our accommodation is exclusively for females, and a one-month deposit is required upon booking.</p>
+                    <h4><span class=" text-secondary">Common Areas</span></h4>
+                    <p>Regarding our common areas, the owner does not reside on the premises, and there are no pets in the accommodation. We provide a well-equipped kitchen, a cozy living room, and a welcoming dining room for your convenience. You can also enjoy our outdoor area for relaxation. We have three shared bathrooms and four shared toilets to accommodate our residents comfortably.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Contact & Map -->
+    <section id= "contact" class="bg-tertiary-subtle p-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md">
+                    <h2 class="text-center mb-4"><span class=" text-secondary"> Contact Info</span></h2>
+                    <ul class="list-group list-group-flush lead">
+                        <li class="list-group-item">
+                            <span class ="fw-bold"><i class="bi bi-house-door-fill mx-2"></i> Location: </span> 861 Berylium close Manresa
+                            <p><sub class="p-5">Harare Zimbawe</sub></p>
+                        </li>
+                        <li class="list-group-item">
+                            <span class ="fw-bold"><i class="bi bi-telephone-fill mx-2"></i>
+                                Landlady Phone Number : </span> +263 772428176
+                        </li>
+                        <li class="list-group-item">
+                            <span class ="fw-bold "><i class="bi bi-telephone-fill mx-2"></i>
+                                Landlady Phone Number : </span> +263 772469792
+                        </li>
+                        <li class="list-group-item">
+                            <span class ="fw-bold"><i class="bi bi-envelope mx-2"></i> Email :</span> info@welcomemauya.com
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md">
+                    <div id="map"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Footer-->
+    <footer class="p-5 bg-dark text-white text-center postion-relative">
+        <div class="container">
+            <p class=" lead">We offer accomodation to University students. We bring the best and most affordable accomodation experience to our tenants by offering the peace of mind hustle-free environment</p>
+            <p><span class=" text-warning">Copyright &copy; 2023 Student Accommodation</span></p>
+            <i class="bi bi-instagram mx-3 "></i>
+            <i class="bi bi-twitter mx-3"></i>
+            <i class="bi bi-facebook mx-3"></i>
+            <i class="bi bi-youtube mx-3"></i>
+
+        </div>
+
+    </footer>
+    <!-- Modal -->
+<div class="modal fade" id="Application" tabindex="-1" aria-labelledby="Application" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="Application">Application Form</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="lead"> Fill out Housing Application Form and we will get back to you</p>
+          <form action="">
+            <div class="mb-3">
+                <label for="first-name" class="col-form-label"> First Name</label>
+                <input type="text" class="form-control" id="first-name">
+            </div>
+            <div class="mb-3">
+                <label for="Last-name" class="col-form-label"> Last Name</label>
+                <input type="text" class="form-control" id="last-name">
+            </div>
+            <div class="mb-3">
+                <textarea class="form-control" aria-label="With textarea">Tell Us About yourself</textarea>
+                <input type="text" class="form-control" id="first-name">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js'></script>
+    <script>
+        mapboxgl.accessToken = 'pk.eyJ1Ijoicmlja3lqNCIsImEiOiJjbG1pYTR1OHoxMWJpM2xwZzI4ODRpc3cxIn0.4zGmzDJK0AQMiYj-RRUeTA';
+        var map = new mapboxgl.Map({
+          container: 'map',
+          style: 'mapbox://styles/mapbox/streets-v11',
+          center: [31.1861227422, -17.816585374],
+          zoom : 14,
+        });
+
+    </script>
+
+
+    
+</body>
+</html>
