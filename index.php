@@ -22,11 +22,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $emailMessage .= "About Yourself: $message\n";
 
     // Send the email
-    mail($to, $subject, $emailMessage, $headers);
-
-    // Redirect to a thank you page or display a success message
-    header("Location: thank_you_page.html");
+    if (mail($to, $subject, $emailMessage, $headers)) {
+        // Redirect to a thank you page or display a success message
+        header("Location: thank_you_page.html");
+        exit();
+    } else {
+        // Display an error message or log the error
+        echo "Error sending email.";
+    }
     exit();
 }
 ?>
-
